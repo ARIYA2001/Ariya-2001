@@ -1,146 +1,87 @@
-  
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<style >
-  * {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 20px;
-}
-h4 {
-    margin: 0px;
-    padding: 5px;
-    border: 1px solid black;
-    border-top: 0px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  
-}
-
-p {
-   color: ;
-    padding: 50px 17px 10px 17px;
-}
-h1 {
-    text-align: center;
-    padding: 20px;
-}
-.p-section {
-    width: 95%;
-    height: 250px;
-    background-color: gray;
-    border: 1px solid black;
-    margin-bottom: 30px;
-    position: relative;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-    bottom: auto;
-
-}
-.background-1 {
-    background-color: pink;
-}
-.background-2 {
-    background-color: brown;
-}
-.background-3 {
-    background-color: #F5CBA7;
-    
-}
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3 {
-    float: left;
-    border: 1px solid green;
-  }
-  .col-lg-1 {
-    width: 33.3%;
-  }
-  .col-lg-2 {
-    width: 33.3%;
-  }
-  .col-lg-3 {
-    width: 33.3%;
-  }
-} 
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3 {
-    float: left; 
-  }
-  .col-md-1 { width: 50%;
-  }
-  .col-md-2 {
-    width: 50%;
-  }
-  .col-md-3 {
-    width:100%;
-  }
-   @media(min-width: 767px){
-  .col-sm-1{
-    width: 100%;
-  }
-  .col-sm-2{
-    width:100%;
-  }
-  .col-sm-3{
-    width:100%;
-  }
-}
-}
-</style>>
-<title>devices</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<title>Module 3 Solution</title>
 </head>
 <body>
-<h1>Devices</h1> 
-<div class="row">
-  <div class="col-lg-3 col-md-1">
-    <div class="p-section">
-      <h4 class="background-1">
-        mobile
-      </h4>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat ante sed tortor gravida pulvinar.
-        Ut ultricies nunc ac felis pulvinar fringilla ut nec metus. Cras vitae viverra erat, at accumsan enim.
-        Mauris sit amet laoreet erat, quis porta tortor. Etiam at nunc sit amet ex eleifend auctor. Proin non justo urna.
-        
-      </p>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-2">
-    <div class="p-section">
-      <h4 class="background-2">
-        tablet
-      </h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat ante sed tortor gravida pulvinar.
-         Ut ultricies nunc ac felis pulvinar fringilla ut nec metus. Cras vitae viverra erat, at accumsan enim.
-         Mauris sit amet laoreet erat, quis porta tortor. Etiam at nunc sit amet ex eleifend auctor. Proin non justo urna.
-         
-      </p>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-3">
-    <div class="p-section">
-      <h4 class="background-3"> 
-        computer
-      </h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat ante sed tortor gravida pulvinar.
-        Ut ultricies nunc ac felis pulvinar fringilla ut nec metus. Cras vitae viverra erat, at accumsan enim.
-        Mauris sit amet laoreet erat, quis porta tortor. Etiam at nunc sit amet ex eleifend auctor. Proin non justo urna.
-        
-      </p>
-    </div>
-  </div>
- 
-</div>
+    <header class="nav-header">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <p class="nav-brand">Food, LLC</p>
+          </div>
 
-</body>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#chicken-div"><p class="item">Chicken</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center beef-item">
+              <a href="#beef-div"><p class="item">Beef</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center sushi-item">
+              <a href="#sushi-div"><p class="item">Sushi</p></a>
+              <hr class="visible-xs">
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+  	</header>
+
+	<h1 class="text-center">Our Menu</h1>
+
+	<div class="row container container-fluid">
+	<div class=" col-ls-3 col-md-12 col-sm-12 col-xs-12" id="chicken-div">
+		<section>
+		<div align="center">
+			<b>Chicken</b>
+		</div>
+		<p>
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum.  lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum.
+		</p>
+		</section>
+	</div>
+	<div class=" col-ls-3 col-md-12 col-sm-12 col-xs-12" id="beef-div">
+		<section>
+		<div align="center">
+			<b>Beef</b>
+		</div>
+		<p>
+			lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum.  lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum.
+		</p>
+		</section>
+	</div>
+	<div class=" col-ls-3 col-md-12 col-sm-12 col-xs-12" id="sushi-div">
+		<section>
+		<div align="center">
+			<b>Sushi</b>
+		</div>
+		<p>
+			lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum.  lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprhenderit in voluptate velit esse cillum dolore eu fugiat nilla pariatur.  Excepteur sint oaccaecat cupidatat non proident, sunt in culpa qui officia dserunt mollit anim id est laborum.
+		</p>
+		</section>
+	</div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> 
+</body> 
 </html>
